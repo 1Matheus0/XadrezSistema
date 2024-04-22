@@ -25,10 +25,5 @@ public void setColuna(int coluna) {
 @Override
 public String toString(){
     return linha + ", " + coluna;
-} 
-   
-
-
-    
-    
+}  
 }
