@@ -15,9 +15,15 @@ public class PartidaXadrez{
         return mat;
     }
 
+    public void novoLugarPeca(char coluna, int linha, XadrezPeca peca){
+        tabuleiro.pecalugar(peca, new XadrezPosicao(coluna, linha).toPosicao());
+    }
+
     private void inicarPartida(){
-        tabuleiro.pecalugar(new Torre(tabuleiro, Color.BRANCO), new Posicao(2, 1));
-        tabuleiro.pecalugar(new Rei(tabuleiro, Color.PRETO), new Posicao(0, 4));
+        novoLugarPeca('b',6, new Torre(tabuleiro, Color.BRANCO));
+        novoLugarPeca('e', 8, new Rei(tabuleiro, Color.PRETO));
+        novoLugarPeca('e', 1, new Rei(tabuleiro, Color.BRANCO));
+
     }
 
 }
