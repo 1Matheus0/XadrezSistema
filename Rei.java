@@ -4,7 +4,7 @@ public class Rei extends XadrezPeca {
     }
     @Override
     public String toString(){
-        return "R";
+        return "Re";
     }
 }
 
